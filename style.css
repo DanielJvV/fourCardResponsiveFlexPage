@@ -1,0 +1,198 @@
+:root {
+    --primary-clr-red: hsl(0, 78%, 62%);
+    --primary-clr-cyan: hsl(180, 62%, 55%);
+    --primary-clr-orange: hsl(34, 97%, 64%);
+    --primary-clr-blue: hsl(212, 86%, 64%);
+    --neutral-clr-drkblue: hsl(234, 12%, 34%);
+    --neutral-clr-gryblue: hsl(229, 6%, 66%);
+    --neutral-clr-lgtgrey: hsl(0, 0%, 98%);
+}
+
+
+/************
+    Index
+*************/
+
+
+/************
+    1.) Typography
+    2.) Sections
+    3.) Desktop Size
+    4.) Extras
+*************/
+
+
+/******************
+   1.) Typography
+*******************/
+
+body {
+    font-size: 15px;
+    line-height: 130%;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--neutral-clr-drkblue);
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+p {
+    color: var(--neutral-clr-gryblue);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+
+/******************
+   2.) Sections
+*******************/
+
+main {
+    background-color: var(--neutral-clr-lgtgrey);
+    width: 75%;
+    margin: auto;
+    padding: 2rem;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.supervisor {
+    max-width: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border-top: solid var(--primary-clr-cyan) 3px;
+    box-shadow: 0px 6px 12px 2px #D3D3D3;
+}
+
+.teambuilder {
+    max-width: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border-top: solid var(--primary-clr-red) 3px;
+    box-shadow: 0px 6px 12px 2px #D3D3D3;
+}
+
+.karma {
+    max-width: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border-top: solid var(--primary-clr-orange) 3px;
+    box-shadow: 0px 6px 12px 2px #D3D3D3;
+}
+
+.calculator {
+    max-width: 100%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border-top: solid var(--primary-clr-blue) 3px;
+    box-shadow: 0px 6px 12px 2px #D3D3D3;
+}
+
+.img {
+    text-align: right;
+}
+
+
+/******************
+  3.) Desktop Size
+*******************/
+
+@media screen and (min-width: 1025px) {
+    main {
+        background-color: var(--neutral-clr-lgtgrey);
+        width: 95%;
+        padding: 2rem;
+        display: flex;
+    }
+    .cardbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .supervisor {
+        width: 14rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        border-top: solid var(--primary-clr-cyan) 3px;
+        box-shadow: 0px 6px 12px 2px #D3D3D3;
+        margin: 2rem;
+    }
+    .teambuilder {
+        width: 14rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        border-top: solid var(--primary-clr-red) 3px;
+        box-shadow: 0px 6px 12px 2px #D3D3D3;
+        margin: 2rem;
+    }
+    .karma {
+        width: 14rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        border-top: solid var(--primary-clr-orange) 3px;
+        box-shadow: 0px 6px 12px 2px #D3D3D3;
+        margin: 2rem;
+    }
+    .calculator {
+        width: 14rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        border-top: solid var(--primary-clr-blue) 3px;
+        box-shadow: 0px 6px 12px 2px #D3D3D3;
+        margin: 2rem;
+    }
+    h1 {
+        font-weight: 200;
+        font-size: 2rem;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    p {
+        color: var(--neutral-clr-gryblue);
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+    body {
+        line-height: 80%;
+    }
+}
+
+
+/******************
+     4.) Extras
+*******************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
