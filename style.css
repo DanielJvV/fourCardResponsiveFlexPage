@@ -16,7 +16,7 @@
 
 /************
     1.) Typography
-    2.) Sections
+    2.) Cards
     3.) Desktop Size
     4.) Extras
 *************/
@@ -28,36 +28,44 @@
 
 body {
     font-size: 15px;
-    line-height: 130%;
-}
-
-h1,
-h2,
-h3 {
-    color: var(--neutral-clr-drkblue);
-    font-family: "Poppins", sans-serif;
 }
 
 h1 {
+    color: var(--neutral-clr-drkblue);
+    font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 1.3rem;
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-    font-size: 1.3rem;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+span {
+    font-weight: 600;
+    display: block;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--neutral-clr-drkblue);
 }
 
 p {
     color: var(--neutral-clr-gryblue);
     font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+
+.headp {
     text-align: center;
 }
 
 
 /******************
-   2.) Sections
+   2.) Cards
 *******************/
 
 main {
@@ -110,8 +118,8 @@ main {
     box-shadow: 0px 6px 12px 2px #D3D3D3;
 }
 
-.img {
-    text-align: right;
+img {
+    margin-left: 75%;
 }
 
 
@@ -169,17 +177,10 @@ main {
         font-size: 2rem;
         text-align: center;
     }
-    h2 {
-        text-align: center;
-        font-size: 2rem;
-    }
     p {
         color: var(--neutral-clr-gryblue);
         font-family: "Poppins", sans-serif;
-        text-align: center;
-    }
-    body {
-        line-height: 80%;
+        text-align: left;
     }
 }
 
